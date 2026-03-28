@@ -142,7 +142,7 @@ export const LivingCJK: React.FC<LivingCJKProps> = ({
       {showLabels && (
         <text
           x={x}
-          y={y + size * 1.5}
+          y={y + size * 0.6 + 20}
           textAnchor="middle"
           fontSize={12}
           className="fill-slate-400 dark:fill-slate-500 select-none pointer-events-none uppercase tracking-widest opacity-50 font-bold transition-colors duration-500"
