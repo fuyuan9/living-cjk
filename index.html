@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate">
+    <title>Living CJK</title>
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('living-cjk-theme');
+          const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (theme === 'dark' || (!theme && supportDarkMode)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-BkRHBOOg.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dr2zczc6.css">
+  </head>
+  <body class="bg-white dark:bg-slate-950 transition-colors duration-500 overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
