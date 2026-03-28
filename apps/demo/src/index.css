@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Rainbow Mode Animation */
+@keyframes rainbow-stroke {
+  0% { stroke: #ff0000; }
+  20% { stroke: #ffff00; }
+  40% { stroke: #00ff00; }
+  60% { stroke: #00ffff; }
+  80% { stroke: #0000ff; }
+  100% { stroke: #ff00ff; }
+}
+
+@keyframes rainbow-fill {
+  0% { fill: #ff0000; }
+  20% { fill: #ffff00; }
+  40% { fill: #00ff00; }
+  60% { fill: #00ffff; }
+  80% { fill: #0000ff; }
+  100% { fill: #ff00ff; }
+}
+
+.rainbow-mode {
+  animation: rainbow-stroke 5s infinite linear, rainbow-fill 5s infinite linear;
+}
+
+/* Custom transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
